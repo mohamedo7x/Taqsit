@@ -53,12 +53,15 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
+        cache-dependency-path: taqsit-backend/package-lock.json
     
     - name: Install dependencies
       run: npm ci
+      working-directory: taqsit-backend
     
     - name: Build application
       run: npm run build
+      working-directory: taqsit-backend
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
