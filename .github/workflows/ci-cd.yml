@@ -106,7 +106,8 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: ./taqsit-backend
+        file: ./taqsit-backend/Dockerfile
         target: production
         push: true
         tags: ${{ steps.meta.outputs.tags }}
