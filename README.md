@@ -1,5 +1,7 @@
 # Taqsit - Installment Tracking Platform
-
+<p align="center">
+  <img src="./images/logo.png" alt="Centered Image" width="300">
+</p>
 **Taqsit** is a backend application built with NestJS that allows merchants or individuals to manage and track installment-based payments for their clients.  
 It provides a secure and scalable API for creating clients, assigning installment plans, monitoring payments, and generating payment schedules.
 
