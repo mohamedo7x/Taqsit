@@ -54,9 +54,11 @@ export class AuthService {
     }
     // Here you would typically generate a JWT token or session
     const token = this.jwtService.sign({ userId: user.id, email: user.email } , {expiresIn: '7h'});
-
+    
     return {message:"signin" , token}
   }
 
-  async signOut() {}
+  async signOut() {
+    
+  }
 }
