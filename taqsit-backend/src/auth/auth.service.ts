@@ -58,7 +58,7 @@ export class AuthService {
     return {message:"signin" , token}
   }
 
-  async signOut() {
+  async signOut(refreshToekn:string) {
     
   }
 }
