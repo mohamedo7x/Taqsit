@@ -1,0 +1,17 @@
+{
+  "name": "taqsit",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"./images/logo.png\" alt=\"Centered Image\" width=\"300\">\r </p>\r **Taqsit** is a backend application built with NestJS that allows merchants or individuals to manage and track installment-based payments for their clients.  \r It provides a secure and scalable API for creating clients, assigning installment plans, monitoring payments, and generating payment schedules.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run start:dev --prefix taqsit-backend\" \"npm run dev --prefix taqsit-frontend\"",
+    "build": "npm run build --prefix taqsit-backend && npm run build --prefix taqsit-frontend",
+    "start": "npm run start:prod --prefix taqsit-backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
